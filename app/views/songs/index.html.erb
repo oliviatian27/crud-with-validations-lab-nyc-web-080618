@@ -1,0 +1,5 @@
+<table><% @songs.each do |song| %>
+<tbody>  <tr><%= link_to song.title,song %></tr></tbody>
+<% end  %>
+</table>
+<%= link_to "create new song",new_song_path %>
